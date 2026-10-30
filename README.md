@@ -1,59 +1,73 @@
-# StoriesReader
+# Stories Reader
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.3.
+**Stories Reader** is a multi-format reading and publishing web application built with Angular and TypeScript. It is designed to provide a unified platform for reading, organizing, and publishing comics, manga, webtoons, graphic novels, and illustrated novels.
 
-## Development server
+The project aims to offer a flexible reading experience that adapts to different storytelling formats, alongside an intuitive content management interface for creators.
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+### Story Library
+- Browse a collection of stories displayed through cover artwork.
+- Organize publications by format and category.
+- View project information, descriptions, and available chapters.
+- Navigate between featured stories and the complete library.
+- Customize the creator profile, avatar, and header banner.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Multi-Format Reader
+- **Left-to-right:** Traditional Western comic reading.
+- **Right-to-left:** Manga-style reading.
+- **Vertical scrolling:** Continuous reading for webtoons and vertical comics.
+- **Illustrated novels:** Text-based chapters with embedded illustrations.
+- Responsive layouts for desktop, tablet, and mobile devices.
 
-## Code scaffolding
+### Content Management
+- Create and organize projects and chapters.
+- Add individual pages or upload multiple pages simultaneously.
+- Automatically associate uploaded pages with their corresponding project and chapter.
+- Edit metadata and reorder pages.
+- Manage different publication formats through a unified interface.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Development Approach
 
-```bash
-ng generate component component-name
-```
+Stories Reader is being developed as a frontend-focused portfolio project, with an architecture designed to support future backend integration.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The initial version uses static content and locally stored assets to demonstrate the reading experience without requiring a server or database.
 
-```bash
-ng generate --help
-```
+Publishing and uploading features will be represented in the interface but remain disabled in demo mode, with clear notices explaining their limitations.
 
-## Building
+The long-term goal is to evolve the application into a fully functional publishing platform with persistent content storage and management capabilities.
 
-To build the project run:
+## Technologies
 
-```bash
-ng build
-```
+### Languages
+- TypeScript
+- HTML
+- SCSS
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Frameworks & Libraries
+- Angular 22
+- Angular Router
+- Angular Material (planned)
+- Iconify (planned)
 
-## Running unit tests
+### Tools & Development
+- Node.js
+- npm
+- Git & GitHub
+- Visual Studio Code
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### Architecture & Concepts
+- Standalone Angular components
+- Component-based architecture
+- Lazy-loaded routing
+- Angular Signals
+- Responsive web design
+- JSON-based content management
+- Separation of data access and presentation layers
+- Backend-ready application architecture
 
-```bash
-ng test
-```
+## Project Status
 
-## Running end-to-end tests
+**In early development.**
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The initial development phase focuses on establishing the application's structure, navigation, reusable components, and layouts before implementing the different reading modes and static content library.
