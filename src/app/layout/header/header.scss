@@ -1,0 +1,91 @@
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header {
+  background: #20202a;
+  color: #fff;
+  border-bottom: 1px solid #363644;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.creator-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.creator-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.creator-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.creator-description {
+  color: #aaaab8;
+  font-size: 0.75rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  a {
+    color: #aaaab8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+
+    &:hover,
+    &.active {
+      color: #fff;
+    }
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

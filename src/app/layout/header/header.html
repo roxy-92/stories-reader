@@ -1,0 +1,40 @@
+<header class="site-header">
+  <div class="header-container">
+    <a class="creator" routerLink="/">
+        <img
+            class="creator-avatar"
+            [src]="site.creator.avatar"
+            [alt]="site.creator.name + ' avatar'"
+        />
+
+        <div class="creator-info">
+            <span class="creator-name">{{ site.creator.name }}</span>
+            <span class="creator-description">
+            {{ site.creator.description }}
+            </span>
+        </div>
+        </a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+
+      <a routerLink="/browse" routerLinkActive="active">
+        Browse
+      </a>
+
+      <a routerLink="/about" routerLinkActive="active">
+        About
+      </a>
+
+      <a routerLink="/dashboard" routerLinkActive="active">
+        Dashboard
+      </a>
+    </nav>
+  </div>
+</header>
